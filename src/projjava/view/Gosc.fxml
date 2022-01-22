@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="282.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projjava.view.GoscController">
+   <children>
+      <TableView fx:id="tabela" layoutX="15.0" layoutY="63.0" prefHeight="261.0" prefWidth="249.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="46.0" text="Id" />
+          <TableColumn fx:id="nazwa" prefWidth="131.0" text="Nazwa" />
+            <TableColumn fx:id="ilosc" prefWidth="71.0" text="Ilosc" />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#wroc" text="&lt;" />
+      <Label layoutX="50.0" layoutY="13.0" text="Panel gościa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutY="47.0" prefHeight="2.0" prefWidth="282.0" />
+   </children>
+</AnchorPane>

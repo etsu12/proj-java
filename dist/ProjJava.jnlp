@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ProjJava.jnlp">
+    <information>
+        <title>ProjJava</title>
+        <vendor>Zang</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="9.0.4+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="ProjJava.jar" size="32745" download="eager"/>
+        <jar href="lib\mysql-connector-java-5.1.47-bin.jar" size="1007505" download="eager"/>
+        <jar href="lib\mysql-connector-java-5.1.47.jar" size="1007502" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="projjava.main.MainApp" name="MainApp"/>
+</jnlp>
+

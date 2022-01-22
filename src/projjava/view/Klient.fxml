@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projjava.view.KlientController">
+   <children>
+      <Button layoutX="167.0" layoutY="175.0" mnemonicParsing="false" onAction="#zamow" text="Zamów" />
+      <TextField fx:id="loginT" editable="false" layoutX="96.0" layoutY="67.0" prefHeight="25.0" prefWidth="126.0" />
+      <TextField fx:id="idT" layoutX="96.0" layoutY="102.0" prefHeight="25.0" prefWidth="40.0" />
+      <TextField fx:id="iloscT" layoutX="96.0" layoutY="138.0" prefHeight="25.0" prefWidth="40.0" />
+      <Label layoutX="26.0" layoutY="71.0" text="Login:" />
+      <Label layoutX="26.0" layoutY="106.0" text="ID produktu:" />
+      <Label layoutX="25.0" layoutY="142.0" text="Ilosc:" />
+      <TableView fx:id="tabela" layoutX="259.0" layoutY="14.0" prefHeight="376.0" prefWidth="235.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="57.0" text="ID" />
+          <TableColumn fx:id="nazwa" prefWidth="124.0" text="Nazwa" />
+            <TableColumn fx:id="ilosc" prefWidth="53.0" text="Ilosc" />
+        </columns>
+      </TableView>
+      <Button layoutX="13.0" layoutY="14.0" mnemonicParsing="false" onAction="#wroc" text="&lt;" />
+      <TextField fx:id="konsola" layoutX="17.0" layoutY="237.0" prefHeight="25.0" prefWidth="217.0" />
+      <Label layoutX="52.0" layoutY="12.0" text="Panel klienta">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="220.0" text="Informacja zwrotna:" />
+      <Separator layoutX="247.0" layoutY="2.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="5.0" />
+      <Separator layoutX="-6.0" layoutY="48.0" prefHeight="7.0" prefWidth="255.0" />
+   </children>
+</AnchorPane>

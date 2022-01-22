@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projjava.controller.TowaryKontroler">
+   <children>
+      <Label layoutX="11.0" layoutY="278.0" text="Konsola" />
+      <TextArea fx:id="konsola" layoutX="8.0" layoutY="295.0" prefHeight="91.0" prefWidth="176.0" />
+      <Label layoutX="18.0" layoutY="47.0" text="Nazwa" />
+      <Label layoutX="18.0" layoutY="81.0" text="Ilość" />
+      <TextField fx:id="txtNazwa" layoutX="60.0" layoutY="43.0" prefHeight="25.0" prefWidth="114.0" />
+      <TextField fx:id="txtIlosc" layoutX="60.0" layoutY="77.0" prefHeight="25.0" prefWidth="42.0" />
+      <Button layoutX="126.0" layoutY="108.0" mnemonicParsing="false" onAction="#wprowadzTowar" text="Dodaj" />
+      <Button layoutX="60.0" layoutY="108.0" mnemonicParsing="false" text="Wyczyść" />
+      <Button layoutX="200.0" layoutY="81.0" mnemonicParsing="false" onAction="#szukajTowar" text="Szukaj" />
+      <Button layoutX="257.0" layoutY="81.0" mnemonicParsing="false" onAction="#aktualizujTowar" text="Aktualizuj" />
+      <Button layoutX="333.0" layoutY="81.0" mnemonicParsing="false" onAction="#usunTowar" text="Usuń" />
+      <Button layoutX="384.0" layoutY="81.0" mnemonicParsing="false" onAction="#szukajWszystkieTowary" text="Szukaj wszystko" />
+      <TextField fx:id="szukajId" layoutX="200.0" layoutY="48.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="szukajIlosc" layoutX="257.0" layoutY="48.0" prefHeight="25.0" prefWidth="68.0" />
+      <Label layoutX="200.0" layoutY="26.0" text="ID" />
+      <Label layoutX="257.0" layoutY="26.0" text="Nowa ilość:" />
+      <Separator layoutX="182.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="18.0" />
+      <Button fx:id="wrocButton" layoutX="20.0" layoutY="14.0" mnemonicParsing="false" onAction="#wroc" text="&lt;" />
+      <Button layoutX="506.0" layoutY="14.0" mnemonicParsing="false" onAction="#przejdzZamowienia" text="Zamowienia" />
+      <TableView fx:id="tabela" layoutX="200.0" layoutY="121.0" prefHeight="269.0" prefWidth="380.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNazwa" prefWidth="75.0" text="Nazwa" />
+            <TableColumn fx:id="colIlosc" prefWidth="75.0" text="Ilosc" />
+        </columns>
+      </TableView>
+      <Label layoutX="59.0" layoutY="11.0" text="Admin">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
